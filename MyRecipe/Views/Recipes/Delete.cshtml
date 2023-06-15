@@ -1,0 +1,16 @@
+﻿@model MyRecipe.Models.Recipes.Recipe
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div>
+    <h3>Are you sure you want to delete your "@Model.Name" recipe?</h3>
+    <p>This action is <b class="text-danger">cannot be undone</b>. Your recipe will be permanently deleted from the website.</p>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="YES" class="btn btn-danger" />
+        <a class="btn btn-primary" asp-action="Details" asp-route-id="@Model.Id">Cancel</a>
+    </form>
+</div>
