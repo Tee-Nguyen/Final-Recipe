@@ -1,7 +1,7 @@
 # Final-Recipe
 Final recipe
 
-Let's use SQL script or NuGet package
+Use SQL script or NuGet package
 
 Add NuGet into project
 Install dotnet-ef, Terminal:
