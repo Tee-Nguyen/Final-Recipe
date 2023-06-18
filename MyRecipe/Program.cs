@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MyRecipeDbContext>(options =>
 {
-    options.UseSqlServer(@"Server=127.0.0.1;Initial Catalog=MyRecipes2;Persist Security Info=False;User ID=sa;Password=Abcd1234@;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;");
+    options.UseSqlServer(@"Server=127.0.0.1;Initial Catalog=MyRecipes3;Persist Security Info=False;User ID=sa;Password=Abcd1234@;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;");
 });
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddDefaultUI()

@@ -44,5 +44,10 @@ namespace MyRecipe.Controllers
                         View(await _context.Recipes.ToListAsync()) :
                         Problem("Entity set 'MyRecipeDbContext.Recipes'  is null.");
         }
+        
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
